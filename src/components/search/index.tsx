@@ -7,8 +7,7 @@ export function Search() {
         <Feather name="search" size={24} color="#64748b" />
         
             <TextInput placeholder="O que você quer comer? "
-            className="flex-1 w-full h-full bg-transparent"
-            />
+            className="flex-1 w-full h-full bg-transparent"/>
 
     </View>
     );

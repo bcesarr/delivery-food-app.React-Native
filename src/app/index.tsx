@@ -6,6 +6,7 @@ import { Header } from '../components/header';
 import { Banner } from '../components/banner';
 import { Search } from '../components/search';
 import { Section } from '../components/section';
+import { TrendingFoods } from '../components/trending';
 
 // Pegando a altura da barra de status do dispositivo e guardando na variavel
 const statusBarHeight = Constants.statusBarHeight
@@ -27,6 +28,8 @@ export default function Home() {
         label="Veja mais"
         action={() => console.log("Clicou no veja mais")}
       />
+
+      <TrendingFoods />
 
       <Section
         name="Famosos no DevFood"
