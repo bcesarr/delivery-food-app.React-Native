@@ -8,6 +8,7 @@ import { Search } from '../components/search';
 import { Section } from '../components/section';
 import { TrendingFoods } from '../components/trending';
 import { Restaurants } from '../components/restaurants';
+import { RestaurantsVerticalList } from '../components/restaurantsList';
 
 // Pegando a altura da barra de status do dispositivo e guardando na variavel
 const statusBarHeight = Constants.statusBarHeight
@@ -40,6 +41,15 @@ export default function Home() {
       />
 
       <Restaurants />
+
+      <Section
+        name="Restaurantes"
+        size="text-2xl"
+        label="Veja todos"
+        action={() => console.log("Clicou no veja todos os restaurantes")}
+      />
+
+      <RestaurantsVerticalList />
 
       {/* <Text className="text-xl text-red-500">Teste do App</Text> */}
     </ScrollView>
