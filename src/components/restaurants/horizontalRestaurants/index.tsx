@@ -9,7 +9,7 @@ export function RestaurantItem( { item }: { item: RestaurantsProps }) {
             className="flex flex-col justify-center items-center"
             onPress={() => console.log(`Clicou no Restaurante ${item.name}`)}
         >
-            
+
             <Image
                 source={{ uri: item.image }}
                 className="w-20 h-20 rounded-full"

@@ -6,7 +6,10 @@ import { Ionicons } from '@expo/vector-icons';
 
 export function CardHorizontalFood({ food }: { food: FoodProps }) {
     return (
-        <Pressable className="flex flex-col rounded-xl relative">
+        <Pressable
+            className="flex flex-col rounded-xl relative"
+            onPress={() => console.log(`Clicou na comida: ${food.name}`)}
+        >
             <Image
                 source={{ uri: food.image }}
                 className="w-44 h-36 rounded-xl"
