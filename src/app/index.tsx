@@ -7,6 +7,7 @@ import { Banner } from '../components/banner';
 import { Search } from '../components/search';
 import { Section } from '../components/section';
 import { TrendingFoods } from '../components/trending';
+import { Restaurants } from '../components/restaurants';
 
 // Pegando a altura da barra de status do dispositivo e guardando na variavel
 const statusBarHeight = Constants.statusBarHeight
@@ -18,8 +19,8 @@ export default function Home() {
     showsVerticalScrollIndicator={false}">
       <View className="w-full px-4" style={{ marginTop: statusBarHeight + 20 }}>
         <Header />
-        <Banner />
         <Search />
+        <Banner />
       </View>
 
       <Section
@@ -34,9 +35,11 @@ export default function Home() {
       <Section
         name="Famosos no DevFood"
         size="text-2xl"
-        label="Veja todas"
-        action={() => console.log("Clicou no veja todas ")}
+        label="Veja todos"
+        action={() => console.log("Clicou no veja todos ")}
       />
+
+      <Restaurants />
 
       {/* <Text className="text-xl text-red-500">Teste do App</Text> */}
     </ScrollView>

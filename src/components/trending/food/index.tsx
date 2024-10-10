@@ -1,4 +1,5 @@
 import { View, Pressable, Text, Image } from 'react-native';
+
 // Importando a nossa interface de tipagem do Trending
 import { FoodProps } from '..';
 import { Ionicons } from '@expo/vector-icons';
